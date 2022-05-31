@@ -20,4 +20,11 @@ int main()
     char s[]="hello world"; // wont work with a string - applicable only to character arrays
     reverse(s,s+strlen(s));
     cout<<s;
+    
+    // unique(iterator to first, to last) removes consecutive equal elements and returns iterator to end
+    char c[]="abcccdddcccbba";
+    int newlen = unique(s, s+ strlen(s))-s;
+    s[newlen]=0;
+    cout<<s; //abcdcba
+    //to obtain distinct characters in the string first sort then apply unique
 }
