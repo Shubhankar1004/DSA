@@ -1,2 +1,2 @@
 # DSA
-Questions and revision for data structures and algorithms
+Study material for Data Strutures and Algorithms.
