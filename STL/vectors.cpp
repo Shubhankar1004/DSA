@@ -90,5 +90,10 @@ int main()
     {
         cout<<x<<" ";
     }cout<<endl;
-
+    
+    // If you're facing error while accessing vector elements
+    //Use
+    cout<<a.at(0)<<endl;
+    //instead of a[0]
+    // at() checks availability of element before accessing
 }
