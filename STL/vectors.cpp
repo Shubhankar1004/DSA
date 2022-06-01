@@ -90,6 +90,7 @@ int main()
     {
         cout<<x<<" ";
     }cout<<endl;
+<<<<<<< HEAD
 
 
     //for 2d vector
@@ -105,4 +106,12 @@ int main()
         }
     }
 
+=======
+    
+    // If you're facing error while accessing vector elements
+    //Use
+    cout<<a.at(0)<<endl;
+    //instead of a[0]
+    // at() checks availability of element before accessing
+>>>>>>> f22e7ca1d58ae555299aa5564f00d71cacaf9e93
 }
