@@ -8,7 +8,11 @@ int main()
     s.insert(2);
     s.insert(-1);
     s.insert(-10);
+    s.insert(-10);//only one -10 in inserted in to the set
     // automatically gets sorted when each element is inserted in log(N) time complexity
+    
+    cout<<*s.begin()<<endl;//-10
+    cout<<*s.end()<<endl;//2
 
     for (int x:s)
         cout<<x<<" ";
@@ -33,4 +37,12 @@ int main()
     // advance(iterator, n) this means iterator+=n
     advance(itt,1);
     cout<<*itt<<endl;
+    
+    set<int, greater<int> > s1;//decreasing order set
+    
+    // assigning the elements from s1 to s2
+    set<int> s2(s1.begin(), s1.end());
+    
+    // remove all elements up to 30 in s2
+    s2.erase(s2.begin(), s2.find(30));
 }
