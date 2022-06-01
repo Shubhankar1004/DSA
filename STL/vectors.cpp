@@ -112,4 +112,15 @@ int main()
     //instead of a[0]
     // at() checks availability of element before accessing
 
+
+
+    //vectors can be compared directly in a lexicographical order
+    vector<int> a{1,2,3};
+    vector<int> b{1,2,3};
+    vector<int> c{1,2,4};
+    vector<int> d{1,2,3,0};
+    cout<<(a==b)<<endl;//1
+    cout<<(a>c)<<endl;//0
+    cout<<(b!=c)<<endl;//1
+    
 }
