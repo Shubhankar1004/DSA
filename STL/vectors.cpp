@@ -91,4 +91,18 @@ int main()
         cout<<x<<" ";
     }cout<<endl;
 
+
+    //for 2d vector
+    int n,m;
+    cin>>n>>m;int b;
+    vector<vector<int>> a(n,vector<int>(m));
+    for (int i=0;i<n;i++)
+    {
+        for (int j=0;j<m;j++)
+        {
+            cin>>b;
+            a.push_back(b);
+        }
+    }
+
 }
