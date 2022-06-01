@@ -10,6 +10,7 @@ int main()
     m[2] = 12;
     m[23] = -1;
     m[143143] = 22; // O(log(N)) time taken to store one value in map
+    //m[1]=200 - if key already exists then the value is updated
 
 
     // example where map is used to calculate freq of letters in a string
