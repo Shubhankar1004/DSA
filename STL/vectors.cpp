@@ -59,6 +59,8 @@ int main()
     auto it2 = upper_bound(a.begin(),a.end(),100);
     // returns iterator of first number in vector > given argument
     // return iterator of a.end() if no number > given aug is present
+    
+    // if you do it1 - a.begin() you will get the index of the element it1 wa pointing to
 
     cout<<*it1<<" "<<*it2<<endl;
     cout<< it2 - it1 <<endl; // 5 (frequency of the number, 100)
