@@ -24,6 +24,9 @@ int main()
     //use comparator function as argument to sort in decreasing order
     // sort(a.begin(),a.end(),decre); //O(Nlog(N))
     sort(a.begin(),a.end(),greater<int>()); //O(Nlog(N))
+    
+    // add target at beginning
+    v.insert(v.begin(), target);
 
     for (int x:a)
     {
