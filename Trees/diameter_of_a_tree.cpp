@@ -1,3 +1,5 @@
+//Brute force in O(n2)
+
 
 class Solution {
   public:
