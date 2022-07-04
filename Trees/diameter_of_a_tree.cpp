@@ -30,3 +30,33 @@ class Solution {
         return fin;
     }
 };
+
+
+//Optimised
+
+
+
+class Solution {
+  public:
+  
+    int answer(Node* &root, int &h){
+       if(root==NULL) return 0;
+       int l = answer(root->left, h);
+       int r = answer(root->right, h);
+       h = max(l+r+1,h);
+       
+       return max(l,r)+1;
+       
+   }
+   // Function to return the diameter of a Binary Tree.
+   int diameter(Node* root) {
+       // Your code here
+       int h = INT_MIN;
+       answer(root, h);
+
+       
+   return h; 
+       
+   }
+};
+
