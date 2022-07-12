@@ -1,3 +1,12 @@
+// O(n) time complexity and O(h) space complexity for all traversals except for morris which takes O(1) space
+
+
+
+
+
+
+
+
 /* Binary Tree Traversal - Preorder, Inorder, Postorder */
 #include<iostream>
 using namespace std;
