@@ -1,3 +1,5 @@
+//BFS traversal works in O(V+E) time complexity
+
 //directed graph
 
 
