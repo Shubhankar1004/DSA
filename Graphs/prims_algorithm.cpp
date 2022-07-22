@@ -1,3 +1,6 @@
+//Prim's and Kruskal's Algorithm are the famous greedy algorithms. They are used for finding the Minimum Spanning Tree (MST) of a given graph. 
+//To apply these algorithms, the given graph must be weighted, connected and undirected.
+
 #include<bits/stdc++.h>
 using namespace std;
 
