@@ -1,4 +1,6 @@
 //merge sort application
+//if a[i]>a[j] for i<j then thats one inversion 
+//works in O(nlogn)
 
 
 class Solution{
