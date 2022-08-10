@@ -1,4 +1,4 @@
-//using extra space
+//using extra space (array ka code)
 void permutations(vector<int> nums,vector<int>& ds,vector<bool>& mp,vector<vector<int>> &ans){
         if(ds.size() == nums.size()){
             ans.push_back(ds);
@@ -28,7 +28,7 @@ void permutations(vector<int> nums,vector<int>& ds,vector<bool>& mp,vector<vecto
 
 
 
-//without using extra space
+//without using extra space (string ka code)
 class Solution
 {
 	public:
