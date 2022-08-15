@@ -37,3 +37,20 @@ class Solution {
        return dp[n];
     }
 };
+
+
+//O(n) tc and O(1) space
+
+
+# define m 1000000007;
+            
+        long long  int firstno = 0;
+        long long int secondno = 1;
+        
+        for (int i = 2; i <= n; i++){
+            long long int currno = (firstno+secondno) % m;
+            firstno = secondno;
+            secondno = currno;
+        }
+        
+        return secondno;
