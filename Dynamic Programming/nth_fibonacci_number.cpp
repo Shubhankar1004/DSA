@@ -1,3 +1,5 @@
+//memoization in tc:O(n) and space:2*O(n)
+
 class Solution {
   public:
     long long fib(long long n,vector<long long> &dp)
@@ -14,5 +16,24 @@ class Solution {
         vector<long long>dp(n+1,-1);
         
         return fib(n,dp);
+    }
+};
+
+
+//tabulation in tc:O(n) and space O(n)
+
+class Solution {
+  public:
+    
+    long long int nthFibonacci(long long int n)
+    {
+        // code here
+        vector<long long int>dp(n+1,-1);
+       dp[0]=0;
+       dp[1]=1;
+       for(int i=2;i<=n;i++){
+           dp[i]=(dp[i-1]%1000000007+dp[i-2]%1000000007)%1000000007;
+       }
+       return dp[n];
     }
 };
