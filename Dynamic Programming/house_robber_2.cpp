@@ -1,3 +1,6 @@
+//uses concept of max sum of non adjacent elements 
+
+
 long long rob(int i,vector<int> &value,vector<long long> &dp)
 {
     if (i==1)
