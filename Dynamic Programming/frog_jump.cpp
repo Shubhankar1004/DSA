@@ -1,6 +1,7 @@
 //coding ninjas wala
 
 //memoization
+// time complexity of O(2n)
 
 #include<bits/stdc++.h>
 int jump(int n,vector<int> heights,vector<int> &dp)
