@@ -1,3 +1,5 @@
+//time complexity of O(n*4)
+
 long long ninja(int day,vector<vector<int>> &points,int last,vector<vector<long long>> &dp)
 {
     if (day==0)
