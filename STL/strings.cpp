@@ -11,6 +11,7 @@ int main()
     cout<<s.substr(1,3);
 
     string a="abcdef";
+    
     reverse(a.begin(),a.end());//fedcba
 
     string a="abcdef";
