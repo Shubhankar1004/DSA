@@ -1,3 +1,6 @@
+//subset, power set and subsequence are the same thing with some diff(copy) while sub array and substring is a different thing
+
+
 // { Driver Code Starts
 //Initial Template for C++
 

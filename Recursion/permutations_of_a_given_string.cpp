@@ -1,8 +1,34 @@
-// { Driver Code Starts
-#include<bits/stdc++.h>
-using namespace std;
+//using extra space (array ka code)
+void permutations(vector<int> nums,vector<int>& ds,vector<bool>& mp,vector<vector<int>> &ans){
+        if(ds.size() == nums.size()){
+            ans.push_back(ds);
+            return;
+        }
+        
+        for(int i=0;i<nums.size();i++){
+            if(mp[i] != true){
+                ds.push_back(nums[i]);
+                mp[i]=true;
+                permutations(nums,ds,mp,ans);
+                ds.pop_back();
+                mp[i]=false;
+            }    
+        }
+    }
+    
+    
+    vector<vector<int>> permute(vector<int>& nums) {
+        vector<bool> mp(nums.size(),false);
+        vector<vector<int>> ans;
+        vector<int> ds;
+        permutations(nums,ds,mp,ans);
+        return ans;
+    }
 
- // } Driver Code Ends
+
+
+
+//without using extra space (string ka code)
 class Solution
 {
 	public:
@@ -36,25 +62,6 @@ class Solution
 
 
 
-// { Driver Code Starts.
-int main(){
-    int t;
-    cin >> t;
-    while(t--)
-    {
-	    string S;
-	    cin >> S;
-	    Solution ob;
-	    vector<string> ans = ob.find_permutation(S);
-	    for(auto i: ans)
-	    {
-	    	cout<<i<<" ";
-	    }
-	    cout<<"\n";
-    }
-	return 0;
-}
-  // } Driver Code Ends
 
 
 
@@ -64,12 +71,6 @@ int main(){
 
 
 
-
-// { Driver Code Starts
-#include<bits/stdc++.h>
-using namespace std;
-
- // } Driver Code Ends
 class Solution
 {
 	public:
@@ -87,23 +88,3 @@ class Solution
 };
 
 
-
-// { Driver Code Starts.
-int main(){
-    int t;
-    cin >> t;
-    while(t--)
-    {
-	    string S;
-	    cin >> S;
-	    Solution ob;
-	    vector<string> ans = ob.find_permutation(S);
-	    for(auto i: ans)
-	    {
-	    	cout<<i<<" ";
-	    }
-	    cout<<"\n";
-    }
-	return 0;
-}
-  // } Driver Code Ends

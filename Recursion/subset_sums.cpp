@@ -1,3 +1,5 @@
+//print sum of all subsets in array
+
 // { Driver Code Starts
 #include<bits/stdc++.h> 
 using namespace std; 

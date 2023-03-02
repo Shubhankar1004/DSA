@@ -2,6 +2,8 @@
 //O(n)
 //unique approach
 
+//refer https://www.youtube.com/watch?v=yroWfS5P2E4
+
 
 // { Driver Code Starts
 #include<bits/stdc++.h>
