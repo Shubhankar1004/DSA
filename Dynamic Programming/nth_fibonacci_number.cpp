@@ -1,4 +1,16 @@
-//memoization in tc:O(n) and space:2*O(n)
+
+//       0 1 1 2 3 5 8 13
+//index  0 1 2 3 4 5 6 7
+
+/* via recursion
+f(n)
+{
+    if (n<=1)
+    return n;
+    return (f(n-1)+f(n-2));
+}*/
+
+//memoization in tc:O(n) and space:2*O(n)(recursion stack space + dp array)
 
 class Solution {
   public:

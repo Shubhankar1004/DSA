@@ -1,0 +1,25 @@
+There are 2 ways to approach the problems in DP, namely
+
+1) Tabulation - Bottom up approach
+2) Memoization - Top down approach
+
+First memoize -> then tabulate -> and finally space optimization
+
+Generic flow of a dp problem:
+Base case
+Dp condition
+store in dp and return the Solution
+
+1D problems
+Understand a dp problem
+count the total no of ways/ min and max
+whenever the concept of all posible ways comes up or the best way then you apply recursion
+
+Shortcut trick
+Try to represent the problem in terms of index
+do all possible stuffs on that index acc to the problem statement
+if q says count all ways then sum up all stuffs/ min(all stuffs) -> find min
+
+Series in which you have to solve the problems:
+
+nth_fibonacci_number

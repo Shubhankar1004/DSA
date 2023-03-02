@@ -1,0 +1,6 @@
+In case mod 10^9 + 7 is involved in the answer follow this link and rules mentioned in it:
+https://www.hackerearth.com/practice/notes/abhinav92003/why-output-the-answer-modulo-109-7/
+
+multiplicative inverse ye hota hai:
+https://www.google.com/amp/s/www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/amp/
+
