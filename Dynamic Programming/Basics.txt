@@ -24,3 +24,4 @@ Series in which you have to solve the problems:
 
 nth_fibonacci_number
 count_ways_to_reach_the_nth_stairs.cpp
+max_sum_of_non_adjacent_elements.cpp
