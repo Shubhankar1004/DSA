@@ -23,3 +23,4 @@ if q says count all ways then sum up all stuffs/ min(all stuffs) -> find min
 Series in which you have to solve the problems:
 
 nth_fibonacci_number
+count_ways_to_reach_the_nth_stairs.cpp
