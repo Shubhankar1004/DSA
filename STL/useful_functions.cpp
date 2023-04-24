@@ -27,4 +27,6 @@ int main()
     s[newlen]=0;
     cout<<s; //abcdcba
     //to obtain distinct characters in the string first sort then apply unique
+    
+    next_permutation(a,a+10); // stores the next permutation of array a in a itself inplace
 }
