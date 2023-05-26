@@ -26,3 +26,12 @@ nth_fibonacci_number
 count_ways_to_reach_the_nth_stairs.cpp
 max_sum_of_non_adjacent_elements.cpp
 house_robber_2.cpp
+ninjas_training.cpp
+
+once done with these we start dp on grids/2d matrix
+1) count paths
+2) count paths with obstacles
+3) min path sum
+4) max path sum
+5) triangle
+6) 2 start points
