@@ -2,6 +2,8 @@
 
 //DP soln works in a time complexity of O(m*n) - usually dp solns have TC = no of states of dp table.
 
+// SC of O((n-1)+(m-1)) + O(n*m)
+
 class Solution {
 public:
     int help(int i,int j,vector<vector<int>> &dp)
