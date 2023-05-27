@@ -1,5 +1,7 @@
 //recursion only has a time complexity of O(2^(m*n))
 
+//DP soln works in a time complexity of O(m*n) - usually dp solns have TC = no of states of dp table.
+
 class Solution {
 public:
     int help(int i,int j,vector<vector<int>> &dp)
