@@ -1,5 +1,6 @@
 //recursion takes O(2^n)
 //memoization takes O(n*k)
+//do no of subsequences with sum k after this
 
 #include <bits/stdc++.h>
 bool help(int i,int target,vector<int> &arr,vector<vector<int>> &dp)
