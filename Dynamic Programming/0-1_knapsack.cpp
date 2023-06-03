@@ -1,3 +1,38 @@
+
+
+//Striver style code
+
+int help(int i,vector<int> weight,vector<int> value,int maxWeight,int n,vector<vector<int>> &dp)
+{
+	if (i==0)
+	{
+		if (weight[i]<=maxWeight)
+		return value[i];
+		else
+		return 0;
+	}
+	if (dp[i][maxWeight]!=-1)
+	return dp[i][maxWeight];
+	int take=0,nottake=0;
+	nottake=0+help(i-1,weight,value,maxWeight,n,dp);
+	if (weight[i]<=maxWeight)
+	take=value[i]+help(i-1,weight,value,maxWeight-weight[i],n,dp);
+	return dp[i][maxWeight]=max(take,nottake);
+}
+int knapsack(vector<int> weight, vector<int> value, int n, int maxWeight) 
+{
+	// Write your code here
+	vector<vector<int>> dp(n,vector<int>(maxWeight+1,-1));
+	return help(n-1,weight,value,maxWeight,n,dp);
+}
+
+
+
+//Aditya Varma style code
+
+
+
+
 //1. Recursive Approach
 int knapSack(int w, int wt[], int val[], int n) 
     { 
