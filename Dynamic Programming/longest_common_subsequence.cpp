@@ -49,3 +49,35 @@ int longestCommonSubsequence(string text1, string text2)
         return dp[m][n];
     }
 };
+
+
+
+//Now for printing this longest subsequence:
+//Construct theirr dp table and traverse from right bottom to left up, always slecting those index that are giving max 
+//dp[i][j] and adding the letter to answer vector when s[i]==t[j]
+//For Example input s=abcde t=bdgek
+//DP Table will be
+//     a b c d e
+//   0 0 0 0 0 0
+// b 0 0 0 0 0 0
+// d 0 1 1 1 1 1
+// g 0 1 1 1 1 1
+// e 0 1 2 2 2 2
+// k 0 1 2 2 3 3
+
+
+//start with 5,5 i.e. i=m,j=n;
+while (i>0 and j>0)
+{
+    if (s[i-1] == t[j-1])
+        ans.push_back(s[i-1]);i--;j--;
+    else if (dp[i-1][j]>dp[j][j-1])
+    {
+          i=i-1;
+    }
+    else if (dp[i][j-1]>dp[i-1][j])
+    {
+        j=j-1;
+    }
+    reverse(ans.begin(),ans.end()); return ans;
+}
