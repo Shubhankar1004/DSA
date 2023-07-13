@@ -1,6 +1,9 @@
+//both union by rank and by size have been implemented below -> prefer union by size as it makes more sense
+
+
 Class DisjointSet
 {
-    vector<int> rank,parent;
+    vector<int> rank,parent,size;
     DisjointSet(int n)
     {
         rank.resize(n+1,0);
@@ -14,7 +17,7 @@ Class DisjointSet
         return node;
         return parent[node]=findUParent(parent[node]);
     }
-    void unionbyrank(int u,int v)
+    void unionbyrank(int u,int v)       //union by rank
     {
         int up_u=findUParent(u);
         int up_v=findUParent(v);
@@ -30,6 +33,26 @@ Class DisjointSet
         else{
             parent[up_v]=up_u;
             rank[up_u]++;
+        }
+    }
+    void unionbysize(int u,int v)    //union by size
+    {
+        int up_u=findUParent(u);
+        int up_v=findUParent(v);
+        if (up_u==up_v) return;
+        if (size[up_u]<size[up_v])
+        {
+            parent[up_u]=up_v;
+            size[up_v]+=size[up_u];
+        }
+        else if(size[up_v]<size[up_u])
+        {
+            parent[up_v]=up_u;
+            size[up_u]+=size[up_v];
+        }
+        else{
+            parent[up_v]=up_u;
+            size[up_u]+=size[up_v];
         }
     }
 };
