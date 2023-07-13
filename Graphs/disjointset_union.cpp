@@ -32,4 +32,18 @@ Class DisjointSet
             rank[up_u]++;
         }
     }
+};
+
+int main()
+{
+    DisjointSet ds(7);
+    ds.unionbyrank(1,2);
+    ds.unionbyrank(2,3);
+    ds.unionbyrank(4,5);
+    ds.unionbyrank(6,7);
+    ds.unionbyrank(5,6);
+    //if 3 and 7 belong to same component or not
+    if (ds.findUParent(3)==ds.findUParent(7)) return 1;
+    ds.unionbyrank(3,7);
+
 }
